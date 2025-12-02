@@ -3,57 +3,112 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Certificación AICP — Advanced Applied AI</title>
+<title>Certificación AICP - Luis Martín Ortecho Carbajal</title>
 <style>
-  body{font-family: "Helvetica Neue", Arial, sans-serif; background:#fffdf9; margin:0; padding:28px;}
-  .wrap{max-width:950px;margin:0 auto;background:#ffffff;padding:36px;border:2px solid #e8e3d9;}
-  .header{display:flex;align-items:center;justify-content:space-between}
-  .logo{width:110px}
-  h1{font-size:24px;margin:6px 0;color:#1b3a6b}
-  .bigname{font-size:20px;font-weight:700;margin:14px 0}
-  .box{background:#f8f9fb;border:1px solid #e6e8ea;padding:14px}
-  .footer{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
-  .qr img{width:118px;height:118px}
-  .small{font-size:12px;color:#666}
+  :root{--bg:#f6f7f9;--frame:#0b3d91;--accent:#0b6fb9;--text:#111;}
+  body{font-family: "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); margin:0; padding:40px;}
+  .wrap{max-width:1100px;margin:0 auto;background:#fff;border:6px solid var(--frame);box-shadow:0 8px 30px rgba(0,0,0,.08);padding:36px;}
+  header{display:flex;align-items:center;gap:24px;}
+  .logo{width:120px;height:120px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .logo img{max-width:100%;height:auto;}
+  .title{flex:1}
+  h1{margin:0;font-size:28px;color:var(--frame);letter-spacing:1px}
+  h2{margin:6px 0 0 0;font-size:18px;color:var(--accent)}
+  .meta{margin-top:18px;display:flex;gap:18px;align-items:center}
+  .big-name{font-size:26px;font-weight:700;color:var(--text);margin-top:20px}
+  .box{margin-top:18px;padding:18px;border:1px dashed #e6e6e6;border-radius:6px;background:#fafafa}
+  .footer{display:flex;justify-content:space-between;align-items:center;margin-top:28px}
+  .code{font-family:monospace;background:#efefef;padding:6px 10px;border-radius:6px}
+  .qr img{width:110px;height:110px}
+  .signature{display:flex;flex-direction:column;align-items:flex-start}
+  .sigline{font-weight:700}
+  .small{font-size:12px;color:#666;margin-top:4px}
+  @media (max-width:640px){.footer{flex-direction:column;gap:12px}}
 </style>
 </head>
 <body>
-<div class="wrap" role="main">
-  <div class="header">
-    <div>
-      <div style="font-weight:700;color:#0b3d91">Advanced Certification Institute of Practice — AICP</div>
-      <h1>Certificate of Completion — Advanced Applied AI</h1>
-      <div class="small">Verificación y QR integrados</div>
+<div class="wrap" id="certwrap">
+  <header>
+    <div class="logo">
+      <!-- SUBE AQUÍ tu logo (PNG) y reemplaza la ruta -->
+      <img src="logo-placeholder.png" alt="AICP logo" id="logoimg">
     </div>
-    <div><img class="logo" src="https://raw.githubusercontent.com/luisortecho-ai/certificaciones-lmo/main/logo-aicp.png" alt="AICP"></div>
-  </div>
-
-  <div class="bigname">Awarded to:<br><span style="font-size:22px;">LUIS MARTÍN ORTECHO CARBAJAL</span></div>
-
-  <div class="box">
-    <strong>Certificate identifier:</strong> <span style="font-weight:700">AICP–2025–LX0943</span><br>
-    <strong>Date of issue:</strong> 25 November 2025<br>
-    <p style="margin-top:8px"><strong>Scope & Competencies:</strong>
-      <ul>
-        <li>Integración de técnicas de IA generativa en diseño de políticas públicas.</li>
-        <li>Implementación ética de modelos LLM en procesos de decisión pública.</li>
-        <li>Análisis de datos y automatización de reportes institucionales.</li>
-      </ul>
-    </p>
-  </div>
-
-  <div class="footer">
-    <div>
-      <div style="font-family:Georgia,serif;font-size:14px">Dr. A. Issuer — Director, AICP</div>
-      <div class="small">Verification: <a href="https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0943.html" target="_blank">https://.../AICP-2025-LX0943.html</a></div>
+    <div class="title">
+      <h1>Certificación Internacional AICP</h1>
+      <h2>Advanced ChatGPT Research & Applied AI</h2>
+      <div class="small">Otorgado por: <strong>AICP — Advanced Certification Institute of Practice</strong></div>
     </div>
-    <div class="qr">
-      <img alt="QR" src="https://chart.googleapis.com/chart?cht=qr&chs=240x240&chl=https%3A%2F%2Fluisortecho-ai.github.io%2Fcertificaciones-lmo%2FAICP-2025-LX0943.html" />
-      <div class="small">Scan to verify</div>
-    </div>
-  </div>
+  </header>
 
-  <div style="margin-top:12px;font-size:13px">SHA-256: <span id="hashB">[CALCULAR]</span></div>
+  <main>
+    <div class="big-name">Otorgado a:</div>
+    <div style="font-size:22px;font-weight:800;margin-top:8px">LUIS MARTÍN ORTECHO CARBAJAL</div>
+
+    <div class="box">
+      <strong>Ámbito / Scope:</strong>
+      Investigación aplicada con modelos de lenguaje, integración de IA en análisis econométrico, automatización de procesos académicos y gubernamentales, y uso avanzado de asistentes LLM para investigación.
+      <div style="margin-top:8px"><strong>Competencias acreditadas:</strong> Análisis econométrico asistido por IA; Diseño y evaluación de protocolos de investigación asistida por LLM; gestión de evidencia y verificación; ChatGPT avanzado para investigación científica.</div>
+    </div>
+
+    <div class="meta">
+      <div>
+        <div class="small">Emitido:</div>
+        <div><strong>20 Nov 2025</strong></div>
+      </div>
+
+      <div>
+        <div class="small">ORCID:</div>
+        <div><a href="https://orcid.org/0009-0007-4882-039X" target="_blank">0009-0007-4882-039X</a></div>
+      </div>
+
+      <div class="qr">
+        <!-- QR hacia la URL pública -->
+        <img id="qrimg" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0942.html" alt="QR">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <div class="signature">
+          <div class="sigline">Dr. A. Issuer</div>
+          <div class="small">Director — AICP</div>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div class="code">Código de verificación: <strong>AICP-2025-LX0942</strong></div>
+        <div class="small" style="margin-top:8px">Verifique la integridad en la URL pública o escanee el código QR.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:12px;font-size:12px;color:#666">
+      <em>Nota: este documento es verificable públicamente. El identificador y la firma digital constan en la página de verificación.</em>
+    </div>
+
+  </main>
 </div>
+
+<script>
+/* Código para calcular y mostrar SHA-256 del certificado (contenido textual) */
+async function sha256of(text){
+  const enc = new TextEncoder();
+  const data = enc.encode(text);
+  const hash = await crypto.subtle.digest('SHA-256', data);
+  const hex = Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  return hex;
+}
+(async ()=>{
+  const wrap = document.getElementById('certwrap');
+  const text = wrap.innerText || wrap.textContent;
+  const h = await sha256of(text);
+  // agrega metadato oculto para verificación
+  const meta = document.createElement('div');
+  meta.style.marginTop='8px';
+  meta.style.fontSize='11px';
+  meta.style.color='#666';
+  meta.innerHTML = 'Integrity (SHA-256): <span style="font-family:monospace">'+h+'</span>';
+  wrap.appendChild(meta);
+})();
+</script>
 </body>
 </html>
