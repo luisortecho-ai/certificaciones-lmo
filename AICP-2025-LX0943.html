@@ -1,46 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Verificación de Certificado AICP-2025-LX0943</title>
+<meta charset="utf-8">
+<title>Diploma {CODE}</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-.container { max-width: 800px; margin: auto; }
-h1 { color: #333; }
-.codebox { font-family: Consolas, monospace; background: #f3f3f3; padding: 15px; border-radius: 6px; }
-.logo { width: 120px; margin-bottom: 15px; }
+body {
+  font-family: Georgia, serif;
+  background: #fafafa;
+  margin: 0; padding: 0;
+}
+.container {
+  width: 1000px;
+  margin: 40px auto;
+  padding: 40px 60px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { height: 95px; }
+.sello { height: 110px; }
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 20px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.details {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+.codebox {
+  background: #f2f2f2;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+}
+.footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign {
+  width: 30%;
+  text-align: center;
+  font-size: 13px;
+}
+.qr {
+  width: 130px;
+  height: 130px;
+}
 </style>
 </head>
+
 <body>
 <div class="container">
 
-<img src="logo_AICP.png" alt="AICP Logo" class="logo">
+  <div class="header">
+    <img src="logo.png" class="logo">
+    <img src="Sello.png" class="sello">
+    <img src="logo.png" class="logo">
+  </div>
 
-<h1>Verificación Oficial — Certificado AICP-2025-LX0943</h1>
+  <h1>AICP — DIPLOMA INTERNACIONAL</h1>
 
-<p>Esta página permite validar la autenticidad del certificado emitido por la
-<strong>Accredited International Certification Program (AICP)</strong>.</p>
+  <div class="subtitle">
+     <strong>{TITLE_EN}</strong><br>
+     <em>{TITLE_ES}</em>
+  </div>
 
-<h3>🔒 Huella digital (SHA-256) del certificado PDF</h3>
-<div class="codebox">
-f2a4a402495f2fc10603c6f8b05473e43d206a886895c3ab1733095e8edae9f1
-</div>
+  <div class="details">
+    Otorgado a <strong>LUIS MARTÍN ORTECHO CARBAJAL</strong><br><br>
+    Por haber completado satisfactoriamente el programa avanzado, conforme a los estándares del
+    <strong>Accredited International Certification Program (AICP)</strong> y bajo la supervisión académica del 
+    <strong>ORTECHO Research & AI Labs</strong>.
+  </div>
 
-<h3>📄 Descargar certificado (versión oficial)</h3>
-<p>
-<a href="AICP-2025-LX0943.pdf" target="_blank">
-➡ Descargar PDF certificado AICP-2025-LX0943
-</a>
-</p>
+  <div class="codebox">
+    Código: <strong>{CODE}</strong>  
+    &nbsp; | &nbsp;
+    SHA-256: <strong>{SHA}</strong>
+  </div>
 
-<h3>🧭 Cómo verificar</h3>
-<ol>
-<li>Descarga el PDF desde el enlace.</li>
-<li>Calcula el SHA-256 con un verificador local en navegador.</li>
-<li>Debe coincidir exactamente con el mostrado arriba.</li>
-</ol>
+  <div class="footer">
 
-<p>© 2025 AICP — Accredited International Certification Program.</p>
+    <div class="sign">
+      <img src="firma_academica.png" style="width:180px;"><br>
+      <strong>Dr. Robert H. Middleton</strong><br>
+      Director Académico
+    </div>
+
+    <div class="sign">
+      <img class="qr" src="https://quickchart.io/qr?text={VERIFY_URL}"><br>
+      Verificación en línea
+    </div>
+
+    <div class="sign">
+      <img src="firma_clara.png" style="width:180px;"><br>
+      <strong>Clara M. Stevenson, MSc</strong><br>
+      Coordinación General
+    </div>
+
+  </div>
+
+  <div class="sign" style="margin-top:30px;">
+      <img src="firma_elena.png" style="width:180px;"><br>
+      <strong>Elena V. Murray, BA</strong><br>
+      Secretaría Académica
+  </div>
+
+  <br>
+  <div style="text-align:center; font-size:12px; color:#555;">
+    © 2025 Accredited International Certification Program — AICP<br>
+    Emisor: ORTECHO Research & AI Labs
+  </div>
 
 </div>
 </body>
