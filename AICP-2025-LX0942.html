@@ -1,143 +1,148 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <title>AICP-2025-LX0942</title>
 
-<!-- Estilos Harvard–MIT -->
 <style>
     body {
-        font-family: "Georgia", serif;
-        background: white;
+        font-family: "Times New Roman", serif;
+        text-align: center;
+        background: #ffffff;
         margin: 0;
-        padding: 40px;
+        padding: 0;
     }
-    .diploma-container {
-        width: 900px;
+
+    .container {
+        width: 90%;
         margin: auto;
-        padding: 50px;
-        border: 8px double #a67c00;
+        padding-top: 20px;
+        border: 8px double #bfa66a;
+        padding-bottom: 40px;
         position: relative;
     }
+
+    .logo {
+        width: 85px;      /* LOGO PEQUEÑO – ACADÉMICO */
+        margin-top: 10px;
+        opacity: 0.95;
+    }
+
     h1 {
         font-size: 32px;
-        text-align: center;
-        letter-spacing: 1px;
         margin-bottom: 5px;
-    }
-    h2 {
-        font-size: 22px;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 35px;
-    }
-    .name {
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
         margin-top: 10px;
+        letter-spacing: 1px;
+        color: #333;
     }
-    .text {
-        text-align: center;
-        font-size: 20px;
-        margin: 20px 50px;
+
+    h2 {
+        font-size: 24px;
+        margin-top: 5px;
+        color: #444;
+    }
+
+    .texto {
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
         line-height: 1.5;
     }
-    .signatures {
-        width: 100%;
-        margin-top: 60px;
+
+    .firmas {
+        width: 90%;
+        margin: 40px auto 10px auto;
         display: flex;
-        justify-content: space-between;
-        text-align: center;
+        justify-content: space-around;
+        align-items: center;
     }
-    .sig-block {
+
+    .firmas div {
+        text-align: center;
         width: 30%;
     }
-    .sig-img {
-        width: 180px;
-        opacity: 0.92;
+
+    .firmas img {
+        width: 140px;
+        margin-bottom: -10px;
+        opacity: 0.9;
     }
-    .sig-role {
-        margin-top: -5px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .logo {
-        width: 160px;
-        display: block;
-        margin: auto;
-        margin-top: -10px;
-        margin-bottom: 20px;
-    }
+
     .sello {
-        width: 220px;
+        width: 150px;
         position: absolute;
-        bottom: 30px;
-        right: 30px;
+        right: 25px;
+        bottom: 25px;
         opacity: 0.92;
     }
+
     .qr {
+        width: 115px;
         position: absolute;
-        bottom: 30px;
-        left: 30px;
-        width: 130px;
+        left: 25px;
+        bottom: 25px;
+        opacity: 0.95;
     }
-    .codigo {
-        text-align: center;
+
+    .footer {
+        margin-top: 40px;
         font-size: 15px;
-        margin-top: 45px;
+        color: #333;
     }
 </style>
 </head>
 
 <body>
-<div class="diploma-container">
+<div class="container">
 
-    <!-- LOGO -->
-    <img src="Logotipo.png" class="logo" />
+    <!-- LOGO PRINCIPAL -->
+    <img src="Logotipo.png" class="logo">
 
     <h1>AICP – DIPLOMA INTERNACIONAL</h1>
-    <h2>Advanced ChatGPT Research & Applied AI<br>
-        Investigación Avanzada en ChatGPT e Inteligencia Artificial Aplicada
-    </h2>
+    <h2>Accredited International Certification Program</h2>
 
-    <div class="text">Otorgado a:</div>
-    <div class="name">LUIS MARTÍN ORTECHO CARBAJAL</div>
+    <div class="texto">
+        Otorgado a:<br>
+        <b>LUIS MARTÍN ORTECHO CARBAJAL</b><br><br>
 
-    <div class="text">
-        Por haber completado satisfactoriamente el programa avanzado acreditado por la<br>
-        <b>Accredited International Certification Program – AICP</b>, con estándares internacionales de excelencia.
+        Por haber completado satisfactoriamente el programa avanzado:<br>
+        <b>“Advanced ChatGPT Research & Applied AI”</b><br>
+        Investigación Avanzada en ChatGPT e Inteligencia Artificial Aplicada<br><br>
+
+        Programa acreditado por la<br>
+        <b>Accredited International Certification Program – AICP</b><br>
+        con estándares internacionales de excelencia.
     </div>
 
     <!-- FIRMAS -->
-    <div class="signatures">
+    <div class="firmas">
 
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/robert.png" />
-            <div class="sig-role">Dr. Robert H. Lancaster<br>Director Académico</div>
+        <div>
+            <img src="firma_director.png">
+            <div>Director Académico</div>
         </div>
 
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/amelia.png" />
-            <div class="sig-role">Dra. Amelia von Hardenberg<br>Coordinadora General</div>
+        <div>
+            <img src="firma_coordinador.png">
+            <div>Coordinador General</div>
         </div>
 
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/whitmore.png" />
-            <div class="sig-role">MSc. Thomas E. Whitmore<br>Secretaría Académica</div>
+        <div>
+            <img src="firma_secretaria.png">
+            <div>Secretaría Académica</div>
         </div>
 
     </div>
 
-    <!-- QR -->
-    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0942.html">
+    <!-- QR CORREGIDO -->
+    <img src="qr_lx0942.png" class="qr">
 
     <!-- SELLO -->
-    <img class="sello" src="Sello.png" />
+    <img src="Sello.png" class="sello">
 
-    <!-- CÓDIGO Y SHA -->
-    <div class="codigo">
-        Código: AICP-2025-LX0942 — SHA-256: <b>e3c4b211dd7d3fc41aa80d8af31dd7b8a3f27dde65a591e723f17145e9602334</b><br>
+    <div class="footer">
+        Código: AICP-2025-LX0942 — SHA-256: <b>7e9c44b215d0fa19c7e1af028c9c61a6f4c82e717d8a935a2c1ed3b707a4e54e</b><br>
         © 2025 Accredited International Certification Program – AICP
     </div>
 
