@@ -2,48 +2,142 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8" />
-<title>AICP-2025-LX0944</title>
+<title>AICP-2025-LX0942</title>
+
+<!-- Estilos Harvard–MIT -->
 <style>
-    body { width:100%; height:100%; margin:0; padding:40px;
-           font-family:"Times New Roman", serif; background:#fff; box-sizing:border-box; }
-    .diploma-container { border:6px double #b18b33; padding:50px; text-align:center; position:relative; }
-    .logo { width:150px; position:absolute; top:40px; left:40px; }
-    .sello { width: 160px; position: absolute; bottom: 40px; right: 40px; opacity: 0.92; }
-    h1 { font-size:32px; color:#333; }
-    .sub { font-size:20px; margin-top:-10px; }
-    .nombre { margin-top:35px; font-size:30px; font-weight:bold; }
-    .programa { margin-top:25px; font-size:22px; font-style:italic; line-height:1.4; }
-    .firmas { width:100%; margin-top:60px; display:flex; justify-content:space-around; }
-    .firmas div { text-align:center; font-size:16px; }
-    .codigo { margin-top:40px; font-size:15px; color:#555; }
+    body {
+        font-family: "Georgia", serif;
+        background: white;
+        margin: 0;
+        padding: 40px;
+    }
+    .diploma-container {
+        width: 900px;
+        margin: auto;
+        padding: 50px;
+        border: 8px double #a67c00;
+        position: relative;
+    }
+    h1 {
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 35px;
+    }
+    .name {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .text {
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 50px;
+        line-height: 1.5;
+    }
+    .signatures {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .sig-block {
+        width: 30%;
+    }
+    .sig-img {
+        width: 180px;
+        opacity: 0.92;
+    }
+    .sig-role {
+        margin-top: -5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .logo {
+        width: 160px;
+        display: block;
+        margin: auto;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    .sello {
+        width: 220px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        opacity: 0.92;
+    }
+    .qr {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 130px;
+    }
+    .codigo {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 45px;
+    }
 </style>
 </head>
 
 <body>
 <div class="diploma-container">
 
+    <!-- LOGO -->
     <img src="Logotipo.png" class="logo" />
-    <img src="Sello.png" class="sello" />
 
     <h1>AICP – DIPLOMA INTERNACIONAL</h1>
-    <div class="sub">Accredited International Certification Program</div>
+    <h2>Advanced ChatGPT Research & Applied AI<br>
+        Investigación Avanzada en ChatGPT e Inteligencia Artificial Aplicada
+    </h2>
 
-    <div class="nombre">LUIS MARTÍN ORTECHO CARBAJAL</div>
+    <div class="text">Otorgado a:</div>
+    <div class="name">LUIS MARTÍN ORTECHO CARBAJAL</div>
 
-    <div class="programa">
-        Por haber completado satisfactoriamente el programa avanzado:<br>
-        <b>“Advanced Data & Econometrics with AI”</b><br>
-        Datos Avanzados y Econometría Asistida por Inteligencia Artificial
+    <div class="text">
+        Por haber completado satisfactoriamente el programa avanzado acreditado por la<br>
+        <b>Accredited International Certification Program – AICP</b>, con estándares internacionales de excelencia.
     </div>
 
-    <div class="firmas">
-        <div><div style="height:60px;"></div><b>Director Académico</b></div>
-        <div><div style="height:60px;"></div><b>Coordinador General</b></div>
-        <div><div style="height:60px;"></div><b>Secretaría Académica</b></div>
+    <!-- FIRMAS -->
+    <div class="signatures">
+
+        <div class="sig-block">
+            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/robert.png" />
+            <div class="sig-role">Dr. Robert H. Lancaster<br>Director Académico</div>
+        </div>
+
+        <div class="sig-block">
+            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/amelia.png" />
+            <div class="sig-role">Dra. Amelia von Hardenberg<br>Coordinadora General</div>
+        </div>
+
+        <div class="sig-block">
+            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/whitmore.png" />
+            <div class="sig-role">MSc. Thomas E. Whitmore<br>Secretaría Académica</div>
+        </div>
+
     </div>
 
+    <!-- QR -->
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0942.html">
+
+    <!-- SELLO -->
+    <img class="sello" src="Sello.png" />
+
+    <!-- CÓDIGO Y SHA -->
     <div class="codigo">
-        Código: AICP-2025-LX0944 — SHA-256: COLOCAR_AQUI_SHA256<br>
+        Código: AICP-2025-LX0942 — SHA-256: <b>e3c4b211dd7d3fc41aa80d8af31dd7b8a3f27dde65a591e723f17145e9602334</b><br>
         © 2025 Accredited International Certification Program – AICP
     </div>
 
