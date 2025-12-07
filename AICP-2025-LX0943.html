@@ -1,131 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Diploma {CODE}</title>
+<meta charset="UTF-8" />
+<title>AICP-2025-LX0943</title>
 <style>
-body {
-  font-family: Georgia, serif;
-  background: #fafafa;
-  margin: 0; padding: 0;
-}
-.container {
-  width: 1000px;
-  margin: 40px auto;
-  padding: 40px 60px;
-  background: white;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo { height: 95px; }
-.sello { height: 110px; }
-
-h1 {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 20px;
-}
-.subtitle {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.details {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-.codebox {
-  background: #f2f2f2;
-  padding: 10px 15px;
-  margin-top: 20px;
-  border-radius: 6px;
-  font-family: Consolas, monospace;
-  font-size: 14px;
-}
-.footer {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-.sign {
-  width: 30%;
-  text-align: center;
-  font-size: 13px;
-}
-.qr {
-  width: 130px;
-  height: 130px;
-}
+    body { width:100%; height:100%; margin:0; padding:40px;
+           font-family:"Times New Roman", serif; background:#fff; box-sizing:border-box; }
+    .diploma-container { border:6px double #b18b33; padding:50px; text-align:center; position:relative; }
+    .logo { width:150px; position:absolute; top:40px; left:40px; }
+    .sello { width:160px; position:absolute; bottom:40px; right:40px; opacity:0.92; }
+    h1 { font-size:32px; color:#333; }
+    .sub { font-size:20px; margin-top:-10px; }
+    .nombre { margin-top:35px; font-size:30px; font-weight:bold; }
+    .programa { margin-top:25px; font-size:22px; font-style:italic; line-height:1.4; }
+    .firmas { width:100%; margin-top:60px; display:flex; justify-content:space-around; }
+    .firmas div { text-align:center; font-size:16px; }
+    .codigo { margin-top:40px; font-size:15px; color:#555; }
 </style>
 </head>
 
 <body>
-<div class="container">
+<div class="diploma-container">
 
-  <div class="header">
-    <img src="logo.png" class="logo">
-    <img src="Sello.png" class="sello">
-    <img src="logo.png" class="logo">
-  </div>
+    <img src="Logotipo.png" class="logo" />
+    <img src="Sello.png" class="sello" />
 
-  <h1>AICP — DIPLOMA INTERNACIONAL</h1>
+    <h1>AICP – DIPLOMA INTERNACIONAL</h1>
+    <div class="sub">Accredited International Certification Program</div>
 
-  <div class="subtitle">
-     <strong>{TITLE_EN}</strong><br>
-     <em>{TITLE_ES}</em>
-  </div>
+    <div class="nombre">LUIS MARTÍN ORTECHO CARBAJAL</div>
 
-  <div class="details">
-    Otorgado a <strong>LUIS MARTÍN ORTECHO CARBAJAL</strong><br><br>
-    Por haber completado satisfactoriamente el programa avanzado, conforme a los estándares del
-    <strong>Accredited International Certification Program (AICP)</strong> y bajo la supervisión académica del 
-    <strong>ORTECHO Research & AI Labs</strong>.
-  </div>
-
-  <div class="codebox">
-    Código: <strong>{CODE}</strong>  
-    &nbsp; | &nbsp;
-    SHA-256: <strong>{SHA}</strong>
-  </div>
-
-  <div class="footer">
-
-    <div class="sign">
-      <img src="firma_academica.png" style="width:180px;"><br>
-      <strong>Dr. Robert H. Middleton</strong><br>
-      Director Académico
+    <div class="programa">
+        Por haber completado satisfactoriamente el programa avanzado:<br>
+        <b>“Advanced AI for Public Management & Analysis”</b><br>
+        Inteligencia Artificial Avanzada para la Gestión Pública y el Análisis
     </div>
 
-    <div class="sign">
-      <img class="qr" src="https://quickchart.io/qr?text={VERIFY_URL}"><br>
-      Verificación en línea
+    <div class="firmas">
+        <div><div style="height:60px;"></div><b>Director Académico</b></div>
+        <div><div style="height:60px;"></div><b>Coordinador General</b></div>
+        <div><div style="height:60px;"></div><b>Secretaría Académica</b></div>
     </div>
 
-    <div class="sign">
-      <img src="firma_clara.png" style="width:180px;"><br>
-      <strong>Clara M. Stevenson, MSc</strong><br>
-      Coordinación General
+    <div class="codigo">
+        Código: AICP-2025-LX0943 — SHA-256: COLOCAR_AQUI_SHA256<br>
+        © 2025 Accredited International Certification Program – AICP
     </div>
-
-  </div>
-
-  <div class="sign" style="margin-top:30px;">
-      <img src="firma_elena.png" style="width:180px;"><br>
-      <strong>Elena V. Murray, BA</strong><br>
-      Secretaría Académica
-  </div>
-
-  <br>
-  <div style="text-align:center; font-size:12px; color:#555;">
-    © 2025 Accredited International Certification Program — AICP<br>
-    Emisor: ORTECHO Research & AI Labs
-  </div>
 
 </div>
 </body>
