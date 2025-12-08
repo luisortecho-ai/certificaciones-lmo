@@ -1,151 +1,94 @@
- <!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>AICP-2025-LX0942</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AICP-2025-LX0942 — Diploma</title>
 <style>
-    body {
-        font-family: "Times New Roman", serif;
-        text-align: center;
-        background: #ffffff;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container {
-        width: 90%;
-        margin: auto;
-        padding-top: 20px;
-        border: 8px double #bfa66a;
-        padding-bottom: 40px;
-        position: relative;
-    }
-
-    .logo {
-        width: 85px;      /* LOGO PEQUEÑO – ACADÉMICO */
-        margin-top: 10px;
-        opacity: 0.95;
-    }
-
-    h1 {
-        font-size: 32px;
-        margin-bottom: 5px;
-        margin-top: 10px;
-        letter-spacing: 1px;
-        color: #333;
-    }
-
-    h2 {
-        font-size: 24px;
-        margin-top: 5px;
-        color: #444;
-    }
-
-    .texto {
-        font-size: 18px;
-        width: 80%;
-        margin: auto;
-        margin-top: 15px;
-        line-height: 1.5;
-    }
-
-    .firmas {
-        width: 90%;
-        margin: 40px auto 10px auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .firmas div {
-        text-align: center;
-        width: 30%;
-    }
-
-    .firmas img {
-        width: 140px;
-        margin-bottom: -10px;
-        opacity: 0.9;
-    }
-
-    .sello {
-        width: 150px;
-        position: absolute;
-        right: 25px;
-        bottom: 25px;
-        opacity: 0.92;
-    }
-
-    .qr {
-        width: 115px;
-        position: absolute;
-        left: 25px;
-        bottom: 25px;
-        opacity: 0.95;
-    }
-
-    .footer {
-        margin-top: 40px;
-        font-size: 15px;
-        color: #333;
-    }
+  :root{
+    --accent:#1b3a7a; /* MIT blue-ish */
+    --gold:#b89b5b;
+    --muted:#666;
+    --frame: 8px solid rgba(27,58,122,0.06);
+  }
+  body{font-family: "Inter", "Helvetica Neue", Arial, sans-serif; background:#fff; margin:0; padding:24px; color:#111;}
+  .page{max-width:900px;margin:18px auto;padding:36px;border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,0.06); border:1px solid #eee; position:relative;}
+  .header{display:flex;align-items:center; gap:16px; justify-content:center; margin-bottom:6px;}
+  .header img.logo{height:72px; display:block;}
+  h1{font-size:28px; text-align:center; color:var(--accent); margin:2px 0;}
+  .sub{font-size:13px; text-align:center; color:var(--muted); margin-bottom:22px; font-weight:600; letter-spacing:0.6px;}
+  .recipient{ text-align:center; margin-top:14px; }
+  .recipient .label{font-size:13px;color:var(--muted);}
+  .recipient .name{font-size:20px;font-weight:700;margin-top:6px;}
+  .program{margin:26px 64px; text-align:center; font-size:16px; line-height:1.45; color:#222;}
+  .program strong{display:block; font-size:17px; margin-bottom:6px;}
+  .accredit{ text-align:center; font-weight:600; color:#333; margin-top:18px; }
+  .sign-area{display:flex; justify-content:space-between; align-items:flex-end; margin-top:36px; padding:0 28px;}
+  .sign{width:30%; text-align:center;}
+  .sign .role{font-size:13px; color:var(--muted); margin-top:6px;}
+  .sig-img{display:block; margin:0 auto; height:56px;}
+  .qr{width:84px; display:block; margin:8px auto 0;}
+  .codebox{margin:22px 0; text-align:center;}
+  .code{display:inline-block; font-family:monospace; background:#f7f7f7; padding:8px 12px; border-radius:6px; color:#222;}
+  .seal{position:absolute; right:34px; bottom:28px; width:140px; opacity:1;}
+  footer{ text-align:center; font-size:12px; color:var(--muted); margin-top:18px;}
+  @media print{ .page{box-shadow:none;} }
 </style>
 </head>
-
 <body>
-<div class="container">
-
-    <!-- LOGO PRINCIPAL -->
-    <img src="Logotipo.png" class="logo">
+  <div class="page" role="document">
+    <div class="header">
+      <!-- logo file must be in same folder in GitHub -->
+      <img class="logo" src="Logotipo.png" alt="Logotipo AICP">
+    </div>
 
     <h1>AICP – DIPLOMA INTERNACIONAL</h1>
-    <h2>Accredited International Certification Program</h2>
+    <div class="sub">Accredited International Certification Program</div>
 
-    <div class="texto">
-        Otorgado a:<br>
-        <b>LUIS MARTÍN ORTECHO CARBAJAL</b><br><br>
-
-        Por haber completado satisfactoriamente el programa avanzado:<br>
-        <b>“Advanced ChatGPT Research & Applied AI”</b><br>
-        Investigación Avanzada en ChatGPT e Inteligencia Artificial Aplicada<br><br>
-
-        Programa acreditado por la<br>
-        <b>Accredited International Certification Program – AICP</b><br>
-        con estándares internacionales de excelencia.
+    <div class="recipient">
+      <div class="label">Otorgado a:</div>
+      <div class="name">LUIS MARTÍN ORTECHO CARBAJAL</div>
     </div>
 
-    <!-- FIRMAS -->
-    <div class="firmas">
-
-        <div>
-            <img src="firma_director.png">
-            <div>Director Académico</div>
-        </div>
-
-        <div>
-            <img src="firma_coordinador.png">
-            <div>Coordinador General</div>
-        </div>
-
-        <div>
-            <img src="firma_secretaria.png">
-            <div>Secretaría Académica</div>
-        </div>
-
+    <div class="program">
+      Por haber completado satisfactoriamente el programa avanzado:
+      <strong>“Advanced ChatGPT Research &amp; Applied AI”</strong>
+      <em>Investigación Avanzada en ChatGPT e Inteligencia Artificial Aplicada</em>
     </div>
 
-    <!-- QR CORREGIDO -->
-    <img src="qr_lx0942.png" class="qr">
-
-    <!-- SELLO -->
-    <img src="Sello.png" class="sello">
-
-    <div class="footer">
-        Código: AICP-2025-LX0942 — SHA-256: <b>7e9c44b215d0fa19c7e1af028c9c61a6f4c82e717d8a935a2c1ed3b707a4e54e</b><br>
-        © 2025 Accredited International Certification Program – AICP
+    <div class="accredit">
+      Programa acreditado por la<br>
+      <strong>Accredited International Certification Program – AICP</strong><br>
+      con estándares internacionales de excelencia.
     </div>
 
-</div>
+    <div class="sign-area">
+      <div class="sign">
+        <!-- SVG signature embedded so no external PNG needed -->
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="40" fill="%23000">Robert</text></svg>' alt="Firma Director">
+        <div class="role">Director Académico</div>
+      </div>
+
+      <div class="sign">
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="36" fill="%23000">Coordinador</text></svg>' alt="Firma Coordinador">
+        <div class="role">Coordinador General</div>
+      </div>
+
+      <div class="sign">
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="36" fill="%23000">Secretaría</text></svg>' alt="Firma Secretaría">
+        <div class="role">Secretaría Académica</div>
+        <!-- QR under last signature -->
+        <img class="qr" src="https://quickchart.io/qr?text=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0942.html&size=200" alt="QR LX0942">
+      </div>
+    </div>
+
+    <div class="codebox">
+      <div class="code">Código: AICP-2025-LX0942 — SHA-256: 88e3c71eee6f941f1048bd1d6bf1033e69a456cee61d93fdec180629d2996465</div>
+    </div>
+
+    <img class="seal" src="Sello.png" alt="Sello AICP">
+
+    <footer>© 2025 Accredited International Certification Program – AICP</footer>
+  </div>
 </body>
 </html>
