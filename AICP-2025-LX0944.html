@@ -1,142 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<title>AICP-2025-LX0944</title>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AICP-2025-LX0944 — Diploma</title>
 <style>
-    body {
-        font-family: "Georgia", serif;
-        background: white;
-        margin: 0;
-        padding: 40px;
-    }
-    .diploma-container {
-        width: 900px;
-        margin: auto;
-        padding: 50px;
-        border: 8px double #a67c00;
-        position: relative;
-    }
-    h1 {
-        font-size: 32px;
-        text-align: center;
-        letter-spacing: 1px;
-        margin-bottom: 5px;
-    }
-    h2 {
-        font-size: 22px;
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 35px;
-    }
-    .name {
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    .text {
-        text-align: center;
-        font-size: 20px;
-        margin: 20px 50px;
-        line-height: 1.5;
-    }
-    .signatures {
-        width: 100%;
-        margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
-    .sig-block {
-        width: 30%;
-    }
-    .sig-img {
-        width: 180px;
-        opacity: 0.92;
-    }
-    .sig-role {
-        margin-top: -5px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .logo {
-        width: 160px;
-        display: block;
-        margin: auto;
-        margin-top: -10px;
-        margin-bottom: 20px;
-    }
-    .sello {
-        width: 220px;
-        position: absolute;
-        bottom: 30px;
-        right: 30px;
-        opacity: 0.92;
-    }
-    .qr {
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        width: 130px;
-    }
-    .codigo {
-        text-align: center;
-        font-size: 15px;
-        margin-top: 45px;
-    }
+  :root{--accent:#1b3a7a;--gold:#b89b5b;--muted:#666;}
+  body{font-family: "Inter", "Helvetica Neue", Arial, sans-serif; background:#fff; margin:0; padding:24px; color:#111;}
+  .page{max-width:900px;margin:18px auto;padding:36px;border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,0.06); border:1px solid #eee; position:relative;}
+  .header{display:flex;align-items:center; gap:16px; justify-content:center; margin-bottom:6px;}
+  .header img.logo{height:72px;}
+  h1{font-size:28px; text-align:center; color:var(--accent); margin:2px 0;}
+  .sub{font-size:13px; text-align:center; color:var(--muted); margin-bottom:22px; font-weight:600;}
+  .recipient{ text-align:center; margin-top:14px; }
+  .recipient .label{font-size:13px;color:var(--muted);}
+  .recipient .name{font-size:20px;font-weight:700;margin-top:6px;}
+  .program{margin:26px 64px; text-align:center; font-size:16px; line-height:1.45; color:#222;}
+  .program strong{display:block; font-size:17px; margin-bottom:6px;}
+  .accredit{ text-align:center; font-weight:600; color:#333; margin-top:18px; }
+  .sign-area{display:flex; justify-content:space-between; align-items:flex-end; margin-top:36px; padding:0 28px;}
+  .sign{width:30%; text-align:center;}
+  .sign .role{font-size:13px; color:var(--muted); margin-top:6px;}
+  .sig-img{display:block; margin:0 auto; height:56px;}
+  .qr{width:84px; display:block; margin:8px auto 0;}
+  .codebox{margin:22px 0; text-align:center;}
+  .code{display:inline-block; font-family:monospace; background:#f7f7f7; padding:8px 12px; border-radius:6px; color:#222;}
+  .seal{position:absolute; right:34px; bottom:28px; width:140px; opacity:1;}
+  footer{ text-align:center; font-size:12px; color:var(--muted); margin-top:18px;}
 </style>
 </head>
-
 <body>
-<div class="diploma-container">
-
-    <img src="Logotipo.png" class="logo" />
+  <div class="page">
+    <div class="header">
+      <img class="logo" src="Logotipo.png" alt="Logotipo AICP">
+    </div>
 
     <h1>AICP – DIPLOMA INTERNACIONAL</h1>
-    <h2>Advanced Data & Econometrics with AI<br>
-        Datos Avanzados y Econometría Asistida por Inteligencia Artificial
-    </h2>
+    <div class="sub">Accredited International Certification Program</div>
 
-    <div class="text">Otorgado a:</div>
-    <div class="name">LUIS MARTÍN ORTECHO CARBAJAL</div>
-
-    <div class="text">
-        Por haber completado satisfactoriamente el programa avanzado acreditado por la<br>
-        <b>Accredited International Certification Program – AICP</b>, cumpliendo estándares internacionales de excelencia.
+    <div class="recipient">
+      <div class="label">Otorgado a:</div>
+      <div class="name">LUIS MARTÍN ORTECHO CARBAJAL</div>
     </div>
 
-    <div class="signatures">
-
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/robert.png" />
-            <div class="sig-role">Dr. Robert H. Lancaster<br>Director Académico</div>
-        </div>
-
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/amelia.png" />
-            <div class="sig-role">Dra. Amelia von Hardenberg<br>Coordinadora General</div>
-        </div>
-
-        <div class="sig-block">
-            <img class="sig-img" src="https://raw.githubusercontent.com/luisortecho-ai/firma-premium/main/whitmore.png" />
-            <div class="sig-role">MSc. Thomas E. Whitmore<br>Secretaría Académica</div>
-        </div>
-
+    <div class="program">
+      Por haber completado satisfactoriamente el programa avanzado:
+      <strong>“Advanced Data &amp; Econometrics with AI”</strong>
+      <em>Datos Avanzados y Econometría Asistida por Inteligencia Artificial</em>
     </div>
 
-    <img class="qr"
-    src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0944.html">
-
-    <img class="sello" src="Sello.png" />
-
-    <div class="codigo">
-        Código: AICP-2025-LX0944 — SHA-256:
-        <b>a4fba817f00b3361a162a0fe5c27d8e7d74b7ca6aeea0af88634ae90e8306d73</b><br>
-        © 2025 Accredited International Certification Program – AICP
+    <div class="accredit">
+      Programa acreditado por la<br>
+      <strong>Accredited International Certification Program – AICP</strong><br>
+      con estándares internacionales de excelencia.
     </div>
 
-</div>
+    <div class="sign-area">
+      <div class="sign">
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="40" fill="%23000">Robert</text></svg>' alt="Firma Director">
+        <div class="role">Director Académico</div>
+      </div>
+
+      <div class="sign">
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="36" fill="%23000">Coordinador</text></svg>' alt="Firma Coordinador">
+        <div class="role">Coordinador General</div>
+      </div>
+
+      <div class="sign">
+        <img class="sig-img" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80"><text x="0" y="52" font-family="Brush Script MT,Segoe Script,Pacifico" font-size="36" fill="%23000">Secretaría</text></svg>' alt="Firma Secretaría">
+        <div class="role">Secretaría Académica</div>
+        <img class="qr" src="https://quickchart.io/qr?text=https://luisortecho-ai.github.io/certificaciones-lmo/AICP-2025-LX0944.html&size=200" alt="QR LX0944">
+      </div>
+    </div>
+
+    <div class="codebox">
+      <div class="code">Código: AICP-2025-LX0944 — SHA-256: 2ad65beedfd0042923ef773c6b12ef095d5698512fb9374eb8edb9c0455da1d6</div>
+    </div>
+
+    <img class="seal" src="Sello.png" alt="Sello AICP">
+
+    <footer>© 2025 Accredited International Certification Program – AICP</footer>
+  </div>
 </body>
 </html>
